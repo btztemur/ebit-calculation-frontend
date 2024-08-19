@@ -13,10 +13,10 @@
             <table class="table table-striped table-sm table-hover table-responsive" width="100%">
                 <thead>
                     <tr>
-                        <th class="text-center">Stage</th>
-                        <th>Instance</th>
-                        <th>Users (in instance)</th>
-                        <th>Actions</th>
+                        <th class="text-center">{{ $t('stage') }}</th>
+                        <th>{{ $t('instance') }}</th>
+                        <th>{{ $t('instance_users') }}</th>
+                        <th>{{ $t('actions') }}</th>
                     </tr>
                 </thead>
                 <tbody>     

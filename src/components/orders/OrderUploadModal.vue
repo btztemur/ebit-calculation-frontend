@@ -4,16 +4,16 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="fileUploadModalLabel">Upload File</h5>
+            <h5 class="modal-title" id="fileUploadModalLabel">{{ $t('upload') }} {{ $t('file') }}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form @submit.prevent="handleSubmit">
               <div class="mb-3">
-                <label for="fileInput" class="form-label">Select File</label>
+                <label for="fileInput" class="form-label">{{ $t('select_file') }}</label>
                 <input type="file" id="fileInput" class="form-control" ref="fileInput" @change="handleFileChange">
               </div>
-              <button type="submit" class="btn btn-primary">Upload</button>
+              <button type="submit" class="btn btn-primary">{{ $t('upload') }}</button>
             </form>
 
             <div class="mt-4">
@@ -21,11 +21,11 @@
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Department</th>
-                    <th>User</th>
-                    <th>File</th>
-                    <th>Upload Time</th>
-                    <th>Actions</th>
+                    <th>{{ $t('department') }}</th>
+                    <th>{{ $t('user') }}</th>
+                    <th>{{ $t('file') }}</th>
+                    <th>{{ $t('upload_time') }}</th>
+                    <th>{{ $t('actions') }}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -51,7 +51,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ $t('close') }}</button>
           </div>
         </div>
       </div>

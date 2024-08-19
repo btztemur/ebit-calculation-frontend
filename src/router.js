@@ -7,6 +7,10 @@ import OrdersView from './components/views/OrdersView.vue';
 import OrderDetail from './components/orders/OrderDetail.vue';
 const routes = [
     {
+      path: '/',
+      redirect: '/orders', 
+    },
+    {
         path: '/instances',
         name: 'Instances',
         component: Instances

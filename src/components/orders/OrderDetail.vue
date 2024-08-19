@@ -4,23 +4,23 @@
     <div class="d-flex">
       <div class="me-2">
         <router-link  class="btn btn-secondary" to="/orders">
-          <font-awesome-icon :icon="['fas', 'arrow-left']" /> Back
+          <font-awesome-icon :icon="['fas', 'arrow-left']" /> {{ $t('back') }}
         </router-link>
       </div>
       <div class="me-2">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='Agreed',messageColor='text-success'">
-          <font-awesome-icon :icon="['fas', 'circle-check']" /> Agree
+          <font-awesome-icon :icon="['fas', 'circle-check']" /> {{ $t('agree') }}
         </button>
       </div>
       <div>
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='Declined', messageColor='text-danger'">
-          <font-awesome-icon :icon="['fas', 'times-circle']" /> Decline
+          <font-awesome-icon :icon="['fas', 'times-circle']" /> {{ $t('decline') }}
         </button>
       </div>
     </div>
     <div>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal">
-        <font-awesome-icon :icon="['fas', 'paperclip']" /> Attach File
+        <font-awesome-icon :icon="['fas', 'paperclip']" /> {{ $t('attach_file') }}
       </button>
     </div>
   </div>
@@ -36,25 +36,25 @@
   </div>
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h5>Order Subjects</h5>
+      <h5>{{ $t('order_subjects') }}</h5>
       <div class="table-responsive">
         <table class="table table-striped table-bordered">
           <thead>
             <tr>
               <th>№</th>
-              <th>Name</th>
-              <th>Unit</th>
-              <th>Amount</th>
-              <th>Status</th>
-              <th>Capex</th>
-              <th>Cost Hypothetical</th>
-              <th>Purpose</th>
-              <th>Place of Installation</th>
-              <th>Time of Installation</th>
-              <th>Contract Number</th>
-              <th>Contract Date</th>
-              <th>Comment</th>
-              <th>Actions *</th>
+              <th>{{ $t('name') }}</th>
+              <th>{{ $t('unit') }}</th>
+              <th>{{ $t('amount') }}</th>
+              <th>{{ $t('status') }}</th>
+              <th>{{ $t('capex') }}</th>
+              <th>{{ $t('cost_hypothetical') }}</th>
+              <th>{{ $t('purpose') }}</th>
+              <th>{{ $t('place_of_installation') }}</th>
+              <th>{{ $t('time_of_installation') }}</th>
+              <th>{{ $t('contract_number') }}</th>
+              <th>{{ $t('contract_date') }}</th>
+              <th>{{ $t('comment') }}</th>
+              <th>{{ $t('actions') }}*</th>
             </tr>
           </thead>
           <tbody>
@@ -81,18 +81,18 @@
   </div>
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h5>Actions under Order</h5>
+      <h5>{{ $t('actions_under_order') }}</h5>
       <div class="table-responsive">
         <table class="table table-striped table-bordered">
           <thead>
             <tr>
               <th>№</th>
-              <th>Time</th>
-              <th>User</th>
-              <th>Instance</th>
-              <th>Instance Reply</th>
-              <th>Instance Replied In</th>
-              <th>Comment</th>
+              <th>{{ $t('time') }}</th>
+              <th>{{ $t('user') }}</th>
+              <th>{{ $t('instance') }}</th>
+              <th>{{ $t('instance_reply') }}</th>
+              <th>{{ $t('instance_replied_in') }}</th>
+              <th>{{ $t('comment') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -112,16 +112,16 @@
   </div>
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h5>Actions under Subjects</h5>
+      <h5>{{ $t('actions_under_subjects') }}</h5>
       <div class="table-responsive">
         <table class="table table-striped table-bordered">
           <thead>
             <tr>
               <th>№</th>
-              <th>№ Subject</th>
-              <th>Executed</th>
-              <th>User</th>
-              <th>Description</th>
+              <th>№ {{ $t('subject') }}</th>
+              <th>{{ $t('executed') }}</th>
+              <th>{{ $t('user') }}</th>
+              <th>{{ $t('description') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -142,15 +142,15 @@
   </div>
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h5>Passage Plan</h5>
+      <h5>{{ $t('passage_plan') }}</h5>
       <div class="table-responsive">
         <table class="table table-striped table-bordered">
           <thead>
             <tr>
-              <th>Instance</th>
-              <th>Stage</th>
-              <th>Period of Consideration</th>
-              <th>Users (in instance)</th>
+              <th>{{ $t('instance') }}</th>
+              <th>{{ $t('stage') }}</th>
+              <th>{{ $t('period_of_consideration') }}</th>
+              <th>{{ $t('instance_users') }}</th>
             </tr>
           </thead>
           <tbody>
