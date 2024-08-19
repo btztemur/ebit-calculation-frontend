@@ -1,0 +1,24 @@
+{
+    "orders": "Заявки",
+    "administrator": "Администратор",
+    "users": "Пользователи",
+    "instances": "Инстанции",
+    "order_types": "Типы заявок",
+    "instance_users": "Пользователи инстанции",
+     "language": "Язык",
+  "sign_out": "Выйти",
+   "english": "Английский",
+  "russian": "Русский",
+  "created": "Создано",
+  "customer_address": "Адрес клиента",
+  "secondary_recipients": "Вторичный получатели уведомления",
+  "type": "Тип",
+  "status": "Статус",
+  "current_instance": "Текущий экземпляр",
+  "stage": "Этап",
+  "deadline": "Крайний срок",
+  "comment": "Комментарий",
+  "add_order": "Добавить заказ",
+   "actual":"Показать только актуальные заказы для меня"
+}
+      

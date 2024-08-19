@@ -1,0 +1,23 @@
+{
+    "orders":"Orders",
+    "administrator": "Administrator",
+  "users": "Users",
+  "instances": "Instances",
+  "order_types": "Order Types",
+  "instance_users": "Instance Users",
+  "language": "Language",
+  "sign_out": "Sign Out",
+  "english": "English",
+  "russian": "Russian",
+  "created": "Created",
+  "customer_address": "Customer Address",
+  "secondary_recipients": "Secondary recipients of Notification",
+  "type": "Type",
+  "status": "Status",
+  "current_instance": "Current Instance",
+  "stage": "Stage",
+  "deadline": "Deadline",
+  "comment": "Comment",
+  "add_order": "Add Order",
+  "actual":"Show only actual orders for me"
+}
