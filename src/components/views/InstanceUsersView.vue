@@ -4,11 +4,13 @@
             <InstanceUserGridCard v-for="(instance,index ) in instances"  :key="index" :instance="instance"/>
              <InstanceUserEditModal  />
              <InstanceUserCreateModal />
+             <DeleteModal/>
         </div>
         </div>
 </template>
 
 <script>
+import DeleteModal from '../DeleteModal.vue';
 import InstanceUserEditModal from '../instance-users/InstanceUserEditModal.vue'
 import InstanceUserGridCard from '../instance-users/InstanceUserGridCard.vue'
 import InstanceUserCreateModal from '../instance-users/InstanceUserCreateModal.vue'
@@ -17,7 +19,8 @@ export default {
   components:{
     InstanceUserGridCard,
     InstanceUserEditModal,
-    InstanceUserCreateModal
+    InstanceUserCreateModal,
+    DeleteModal
   },
   data() {
     return {

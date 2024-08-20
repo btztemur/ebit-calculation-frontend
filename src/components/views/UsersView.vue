@@ -4,12 +4,12 @@
     <div class="row mb-3">
         <div class="col-auto">
             <button data-url="https://purchase-test.etc-network.uz/admin/user" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal">
-                <i class="fa-solid fa-user-plus"></i> &nbsp; Add user
+                <i class="fa-solid fa-user-plus"></i> &nbsp; {{ $t('add') }}
             </button>
         </div>
         <div class="col">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                <input type="text" class="form-control" :placeholder="$t('search')" aria-label="Search" aria-describedby="button-addon2">
             </div>
         </div>
     </div>
@@ -18,15 +18,14 @@
         <thead>
             <tr>
                 <th class="text-center" width="3%">№</th>
-                <th class="text-center">Id</th>
-                <th width="15%">Order Type</th>
-                <th width="15%">Instance</th>
-                <th>Full name</th>
-                <th>Email</th>
-                <th>Username</th>
-                <th>Status</th>
-                <th>Date, Time</th>
-                <th class="text-end">Actions</th>
+                <th width="15%">{{ $t('order_type') }}</th>
+                <th width="15%">{{ $t('instance') }}</th>
+                <th>{{ $t('full_name') }}</th>
+                <th>{{ $t('email') }}</th>
+                <th>{{ $t('username') }}</th>
+                <th>{{ $t('status') }}</th>
+                <th>{{ $t('date') }}  {{ $t('time') }}</th>
+                <th class="text-end">{{ $t('actions') }}</th>
             </tr>
         </thead>
         <tbody>
@@ -36,6 +35,7 @@
     </div>
     <UserEditModal />
     <UserCreateModal />
+    <DeleteModal/>
 </div>
 </template>
 
@@ -45,6 +45,7 @@
 import UserTableRow from '../users/UserTableRow.vue';
 import UserEditModal from '../users/UserEditModal.vue';
 import UserCreateModal from '../users/UserCreateModal.vue';
+import DeleteModal from '../DeleteModal.vue';
 export default {
   name: 'UsersView',
   data() {
@@ -72,7 +73,8 @@ export default {
   components:{
     UserTableRow,
     UserEditModal,
-    UserCreateModal
+    UserCreateModal,
+    DeleteModal
   }
 }
 </script>

@@ -4,7 +4,7 @@
       <div class="d-flex align-items-center">
         <div>
           <a class="btn btn-primary js_add_btn mb-3" data-bs-toggle="modal" data-bs-target="#addOrderModal">
-            {{ $t('add_order') }}
+            {{ $t('add') }}
           </a>
         </div>
         <div class="ms-3">

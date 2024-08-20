@@ -10,11 +10,11 @@
                 <div class="modal-body">
                     <form >
                         <div class="mb-3">
-                            <label for="orderType" class="form-label">Order Type *</label>
+                            <label for="orderType" class="form-label">{{ $t('order_type') }} *</label>
                             <input type="text" class="form-control" id="orderType"  required>
                         </div>
                         <div class="mb-3">
-                            <label for="instance" class="form-label">Instance *</label>
+                            <label for="instance" class="form-label">{{ $t('instance') }} *eeeeeeeeeeeeee</label>
                             <input type="text" class="form-control" id="instance"  required>
                         </div>
                         <div class="mb-3">

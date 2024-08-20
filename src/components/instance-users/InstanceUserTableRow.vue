@@ -17,8 +17,7 @@
                             <font-awesome-icon :icon="['fas', 'pen']" />
                         </button>
                         <button class="btn btn-danger btn-sm js_delete_btn" href="javascript:void(0);" @click="showModal"
-                            data-toggle="modal" data-target="#deleteModal"
-                            data-name=" Technical department "
+                            data-bs-toggle="modal" data-bs-target="#deleteModal"
                             data-url="https://purchase-test.etc-network.uz/admin/user-instance/1"
                             title="Delete">
                             <font-awesome-icon :icon="['fas', 'trash-alt']" />

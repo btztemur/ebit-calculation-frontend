@@ -186,5 +186,79 @@
           "stage": "4 / 19",
           "deadline": "2024-08-25",
           "comment": "В процессе рассмотрения."
-        }]
+        }],
+
+    "orderSubjects":[
+      {
+          "Name": "Server Upgrade",
+          "Unit": "Piece",
+          "Amount": 5,
+          "Status": "Completed",
+          "Capex": 12000,
+          "Cost_hypothetical": 15000,
+          "Purpose": "Upgrade server hardware",
+          "Place_of_Installation": "Data Center",
+          "Time_of_Installation": "2024-03-15",
+          "Contract_number": "CON123456",
+          "Contract_date": "2023-12-01",
+          "Comment": "Completed on schedule"
+      },
+      {
+          "Name": "Office Renovation",
+          "Unit": "Square Meter",
+          "Amount": 200,
+          "Status": "In Progress",
+          "Capex": 50000,
+          "Cost_hypothetical": 55000,
+          "Purpose": "Renovate office space",
+          "Place_of_Installation": "Head Office",
+          "Time_of_Installation": "2024-06-30",
+          "Contract_number": "CON654321",
+          "Contract_date": "2024-01-15",
+          "Comment": "Materials are being procured"
+      },
+      {
+          "Name": "New Workstations",
+          "Unit": "Piece",
+          "Amount": 10,
+          "Status": "Pending",
+          "Capex": 15000,
+          "Cost_hypothetical": 16000,
+          "Purpose": "Purchase new workstations",
+          "Place_of_Installation": "Main Office",
+          "Time_of_Installation": "2024-05-01",
+          "Contract_number": "CON789012",
+          "Contract_date": "2024-02-01",
+          "Comment": "Pending supplier confirmation"
+      },
+      {
+          "Name": "Network Switch",
+          "Unit": "Piece",
+          "Amount": 3,
+          "Status": "Completed",
+          "Capex": 9000,
+          "Cost_hypothetical": 9500,
+          "Purpose": "Upgrade network infrastructure",
+          "Place_of_Installation": "Server Room",
+          "Time_of_Installation": "2024-04-10",
+          "Contract_number": "CON345678",
+          "Contract_date": "2024-01-20",
+          "Comment": "All units installed and tested"
+      },
+      {
+          "Name": "Security Cameras",
+          "Unit": "Piece",
+          "Amount": 15,
+          "Status": "In Progress",
+          "Capex": 8000,
+          "Cost_hypothetical": 8500,
+          "Purpose": "Enhance building security",
+          "Place_of_Installation": "Entrance and Hallways",
+          "Time_of_Installation": "2024-07-15",
+          "Contract_number": "CON987654",
+          "Contract_date": "2024-03-01",
+          "Comment": "Installation started, ongoing"
+      }
+  ]
+  
 }

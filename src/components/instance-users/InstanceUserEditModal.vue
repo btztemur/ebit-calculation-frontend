@@ -3,21 +3,20 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="customModalLabel">Your Title Here</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="stage" class="form-label">Stage</label>
+                            <label for="stage" class="form-label">{{ $t('stage') }}</label>
                             <input type="number" class="form-control" id="stage" required>
                         </div>
                         <div class="mb-3">
-                            <label for="instance" class="form-label">Instance</label>
+                            <label for="instance" class="form-label">{{ $t('instance') }}</label>
                             <input type="text" class="form-control" id="instance" required>
                         </div>
                         <div class="mb-3">
-                            <label for="selectField" class="form-label">Select Item</label>
+                            <label for="selectField" class="form-label">{{ $t('select_item') }}</label>
                             <multiselect
                                             v-model="selectedValues"
                                             :options="options"
@@ -25,12 +24,13 @@
                                             placeholder="Select options"
                                           />
                         </div>
+                        <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary me-1">{{ $t('apply') }}</button>
+                        <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal">{{ $t('close') }}</button>
+                    </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+               
             </div>
         </div>
     </div>

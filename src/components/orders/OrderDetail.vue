@@ -8,12 +8,12 @@
         </router-link>
       </div>
       <div class="me-2">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='Agreed',messageColor='text-success'">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='agreed',messageColor='text-success'">
           <font-awesome-icon :icon="['fas', 'circle-check']" /> {{ $t('agree') }}
         </button>
       </div>
       <div>
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='Declined', messageColor='text-danger'">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal" @click="message='declined', messageColor='text-danger'">
           <font-awesome-icon :icon="['fas', 'times-circle']" /> {{ $t('decline') }}
         </button>
       </div>
@@ -54,25 +54,24 @@
               <th>{{ $t('contract_number') }}</th>
               <th>{{ $t('contract_date') }}</th>
               <th>{{ $t('comment') }}</th>
-              <th>{{ $t('actions') }}*</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(item, index) in selectedOrderSubjects" :key="index">
+            <tr v-for="(item, index) in OrderSubjects" :key="index">
               <td>{{ ++index }}</td>
               <td>{{ item.Name }}</td>
               <td>{{ item.Unit }}</td>
               <td>{{ item.Amount }}</td>
               <td>{{ item.Status }}</td>
               <td>{{ item.Capex }}</td>
-              <td>{{ item.CostHypothetical }}</td>
+              <td>{{ item.Cost_hypothetical }}</td>
               <td>{{ item.Purpose }}</td>
-              <td>{{ item.PlaceOfInstallation }}</td>
-              <td>{{ item.TimeOfInstallation }}</td>
-              <td>{{ item.ContractNumber }}</td>
-              <td>{{ item.ContractDate }}</td>
+              <td>{{ item.Place_of_Installation }}</td>
+              <td>{{ item.Time_of_Installation }}</td>
+              <td>{{ item.Contract_number }}</td>
+              <td>{{ item.Contract_date }}</td>
               <td>{{ item.Comment }}</td>
-              <td>{{ item.Actions }}</td>
+              
             </tr>
           </tbody>
         </table>
@@ -179,6 +178,7 @@
   </div>
   <OrderConfirmModal :message="message"  :messageColor="messageColor"/>
   <OrderUploadModal/>
+  <DeleteModal/>
 </div>
 
 </template>
@@ -187,17 +187,21 @@
 import OrderUploadModal from './OrderUploadModal.vue';
 import OrderConfirmModal from './OrderConfirmModal.vue';
 import OrderDocument from './OrderDocument.vue';
+import data from '../../fake-data/orders.json';
+import DeleteModal from '../DeleteModal.vue';
 export default{
   name: 'OrderDetail',
   components:{
     OrderUploadModal,
     OrderConfirmModal,
-    OrderDocument
+    OrderDocument,
+    DeleteModal
   },
   data(){
     return{
       message:null,
       messageColor:null,
+      OrderSubjects:data.orderSubjects
     }
   },
   

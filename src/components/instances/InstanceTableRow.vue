@@ -16,8 +16,8 @@
                     data-update_url="https://purchase-test.etc-network.uz/admin/instance/29" title="Edit">
                     <font-awesome-icon :icon="['fas', 'pen']"/>
                 </a>
-                <a class="btn btn-danger btn-sm js_delete_btn" data-toggle="modal"
-                    data-target="#deleteModal" data-name="Test"
+                <a class="btn btn-danger btn-sm js_delete_btn" data-bs-toggle="modal"
+                    data-bs-target="#deleteModal" 
                     data-url="https://purchase-test.etc-network.uz/admin/instance/29" title="Delete">
                     <font-awesome-icon :icon="['fas', 'trash-alt']" />
                 </a>

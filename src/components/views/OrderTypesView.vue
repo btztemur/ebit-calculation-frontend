@@ -4,12 +4,12 @@
           <div class="row mb-3">
         <div class="col-auto">
             <button data-url="https://purchase-test.etc-network.uz/admin/user" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal">
-                <i class="fa-solid fa-user-plus"></i> &nbsp; Add user
+                <i class="fa-solid fa-user-plus"></i> &nbsp; {{ $t('add') }}
             </button>
         </div>
         <div class="col">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                <input type="text" class="form-control" :placeholder="$t('search')" aria-label="Search" aria-describedby="button-addon2">
               
             </div>
         </div>
@@ -18,9 +18,9 @@
                 <thead>
                     <tr>
                         <th class="text-center" width="3%">№</th>
-                        <th>Order type En</th>
-                        <th>Order type Ru</th>
-                        <th class="text-end">Actions</th>
+                        <th>{{ $t('order_type') }} ({{ $t('english') }})</th>
+                        <th>{{ $t('order_type') }} ({{ $t('russian') }})</th>
+                        <th class="text-end">{{ $t('actions') }}</th>
                     </tr>
                 </thead>
                 <tbody>

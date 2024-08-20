@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="acceptLabel">Instance reply</h5>
+                <h5 class="modal-title" id="acceptLabel">{{ $t('instance_reply') }}</h5>
             </div>
             <form action="https://purchase-test.etc-network.uz/order-action/status" method="POST" class="js_order_status_form">
                 <input type="hidden" name="_token" value="Bgx1wWIHBEkg9lA7xc4I6ZBGLgOQp9OgzZWb1RlC"> 
@@ -11,17 +11,17 @@
                 <input type="hidden" name="status" class="js_status" value="1">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Reply:</label>
-                        <b :class="['js_text', messageColor]">{{ message }}</b>
+                        <label for="recipient-name" class="col-form-label">{{ $t('reply') }}:</label>
+                        <b :class="['js_text', messageColor]">{{ translatedMessage }}</b>
                     </div>
                     <div class="form-group">
-                        <label for="message-text" class="col-form-label">Comment:</label>
+                        <label for="message-text" class="col-form-label">{{ $t('comment') }}:</label>
                         <textarea class="form-control js_comment" name="comment" id="message-text"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Apply</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">{{ $t('apply') }}</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ $t('close') }}</button>
                 </div>
             </form>
         </div>
@@ -33,11 +33,21 @@ export default {
   props: {
     message: {
       type: String,
-      required: true
     },
     messageColor:{
         type:String,
         default:'text-success'
+    },
+},
+computed: {
+    translatedMessage() {
+        if(this.message!=null){
+            
+           return this.$t(this.message)
+        }
+        else {
+            return this.message
+        }
     }
   }
 };

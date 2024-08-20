@@ -9,7 +9,7 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="stage" class="form-label">Stage</label>
+                            <label for="stage" class="form-label">{{ $t('stage') }}</label>
                             <input type="number" class="form-control" id="stage" required>
                         </div>
                         <div class="mb-3">
